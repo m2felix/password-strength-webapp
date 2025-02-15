@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 import joblib
 
 # Load dataset
-df = pd.read_csv("data/passwords.csv").dropna()
+df = pd.read_csv("passwords.csv").dropna()
 
 # Convert passwords to numerical features
 vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(3, 5))
