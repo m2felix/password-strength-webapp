@@ -3,4 +3,6 @@ pandas
 scikit-learn
 joblib
 streamlit
-
+flask
+pip freeze | grep tqdm >> requirements.txt
+pip freeze | grep Flask >> requirements.txt
